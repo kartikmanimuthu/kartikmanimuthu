@@ -1,16 +1,19 @@
-### Hi there 👋
+Hi, I'm Kartik 👋
+Linkedin
 
-<!--
-**Karthikmani345/karthikmani345** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a Indian guy who has a curious mind. I'd like to learn something new every day. I'm a Fullstack developer by Nomenclature.
 
-Here are some ideas to get you started:
+😍 My hobbies are exploring technology,reading and gymastic.
+💌 Contact me at karthikmani345@gmail.com.
+Technologies I've been learning and using so far :
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Programming languages :
+Python PHP Matlab JavaScript FreeFEM++
+Machine Learning / Deep Learning frameworks :
+TensorFlow Scikit-learn PyTorch Jupyter Notebook
+Frontend :
+HTML5 Sass React Angular Gatsby Jekyll Bootstrap 11ty Wordpress
+Backend :
+Airflow Docker MongoDB Firebase MySQL gRPC NodeJS GraphQL Heroku
+OS & IDE & Tools :
+VS Code Linux GNU Bash Git Sphinx doc

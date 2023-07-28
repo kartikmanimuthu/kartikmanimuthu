@@ -1,13 +1,12 @@
-<h1 align="center">Hi 👋, I'm Karthik</h1>
-<h3 align="center"><Fullstack Developer/></h3>
+# Hi 👋, I'm Karthik Manimuthu
 
-- 🌱 I’m currently learning **Distributed computing,Cloud architecture**
+## About Me 📌
 
-- 💬 Ask me about **Golang,Node.js,Typescript,Microfrontend**
+Passionate tech enthusiast and experienced Software Architect. Throughout my career, I've applied a diverse range of technologies to create solutions throughout the software development life cycle.
 
-- 📫 How to reach me **karthikmani345@gmail.com**
+## Technical Expertise 💼
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/karthik-mani-1725aa135](https://www.linkedin.com/in/karthik-mani-1725aa135)
+Expertise in Cloud Architecture, SAAS, Cloud Cost Optimization, DevOps, Multi-Tenant Architecture, Serverless Architecture, Event Driven Architecture, System Design, Performance Engineering, Query Optimization, Microfrontend, Microservices, Application Performance Monitoring, Data Engineering, Data Lake, Data Warehouse, ETL/ELT, MERN Stack, T3 Stack, and AWS. Proficient in programming languages like Golang, Node.js, and TypeScript.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

@@ -1,4 +1,4 @@
-# Hi 👋, I'm Karthik Manimuthu
+# Hi 👋, I'm Kartik Manimuthu
 
 ## About Me 📌
 

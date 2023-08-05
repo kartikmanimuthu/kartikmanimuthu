@@ -1,3 +1,11 @@
+
+export const personalization: { [key: string]: string } =
+{
+    profilePicPublicPath: "/Profile.png",
+};
+
+
+
 export const workExperience: ReadonlyArray<{ organization: string, role: string, duration: string }> = [
     {
         organization: "Scrut Automation",
@@ -61,3 +69,4 @@ export const technicalSkills: ReadonlyArray<string> = [
     "Amazon Web Services",
     "Golang",
 ];
+

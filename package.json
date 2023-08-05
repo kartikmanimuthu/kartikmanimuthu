@@ -1,0 +1,36 @@
+{
+  "name": "nextra-blog-template",
+  "version": "0.0.1",
+  "description": "Nextra blog's template",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartikmanimuthu/kartikmanimuthu.git"
+  },
+  "author": "KartikManimuthu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kartikmanimuthu/kartikmanimuthu/issues"
+  },
+  "homepage": "https://github.com/kartikmanimuthu/kartikmanimuthu#readme",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "autoprefixer": "^10.4.14",
+    "next": "^13.0.6",
+    "nextra": "latest",
+    "nextra-theme-blog": "^2.10.0",
+    "nextra-theme-docs": "latest",
+    "postcss": "^8.4.27",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}

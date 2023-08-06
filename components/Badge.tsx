@@ -11,7 +11,7 @@ const Badge: React.FC = ({ data }: BadgeProps) => {
         {data?.map((literal, index) => (
           <li
             key={index}
-            className="inline-block bg-gray-200 rounded px-2 py-1 text-base font-semibold text-gray-700 mr-2 mb-2"
+            className="inline-block bg-gray-400  text-gray-900  dark:bg-gray-700 dark:text-gray-200 rounded px-2 py-1 text-base font-semibold mr-2 mb-2"
           >
             {literal}
           </li>

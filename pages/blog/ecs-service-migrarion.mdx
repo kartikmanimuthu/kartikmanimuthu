@@ -1,0 +1,87 @@
+---
+title: "Effortless Migration of AWS ECS Fargate Tasks Using a Shell Script"
+date: 2023/08/05
+description: "Experience hassle-free migration of AWS ECS Fargate tasks and services with our step-by-step guide and robust shell script."
+tag: "AWS, ECS, Fargate, DevOps"
+author: "Kartik Manimuthu"
+---
+
+## Effortless Migration of AWS ECS Fargate Tasks Using a Shell Script
+
+In the vast realm of AWS, migrating resources, especially ECS Fargate tasks, can often seem daunting. Our solution? A dynamic shell script that not only facilitates the transfer of these tasks but also optimizes costs using Fargate Spot.
+
+## Why This Script Matters
+
+Transitioning between AWS clusters requires precision and coordination. Our script aims to:
+
+- **Simplify Migration**: Seamlessly transfer Fargate tasks from source to destination clusters.
+- **Replicate with Precision**: Maintain service configurations consistently across clusters.
+- **Offer Peace of Mind**: By monitoring task health, ensuring successful migration before any cleanup.
+
+## Visualize the Process
+
+To help visualize the migration journey:
+
+```
+          +----------------------------------------+
+          |            Source Cluster              |
+          |                                        |
+          |   +---------------------+              |
+          |   |      ECS Service    |              |
+          |   +---------------------+              |
+          |       |               |                |
+          |       v               |                |
+          |   +---------------------+              |
+          |   |   Fargate Tasks    |              |
+          |   +---------------------+              |
+          |                                        |
+          +----------------------------------------+
+
+          +----------------------------------------+
+          |          Destination Cluster           |
+          |                                        |
+          |   +---------------------+              |
+          |   |      ECS Service    |              |
+          |   +---------------------+              |
+          |       |               |                |
+          |       v               |                |
+          |   +---------------------+              |
+          |   |   Fargate Tasks    |              |
+          |   +---------------------+              |
+          |                                        |
+          +----------------------------------------+
+```
+
+## Quick Setup & Run
+
+### Essential Tools:
+
+- **AWS CLI**: Ensure it's installed and ready with appropriate permissions.
+- **`jq`**: Required for JSON parsing.
+
+### Kickstart the Migration:
+
+1. **Clone** : [Source Code ↗](https://github.com/kartikmanimuthu/aws-ecs-workshop)
+
+2. **Initialize**:
+
+   - `SERVICE_NAME`: Your ECS service's name.
+   - `SOURCE_CLUSTER`: Source's cluster name.
+   - `DEST_CLUSTER`: Destination's cluster name.
+
+3. **Trigger**:
+   ```bash
+   bash ecs-service-migration.sh
+   ```
+
+## What to Expect
+
+- **Regular Updates**: The script will keep you informed with relevant migration updates.
+- **Safety First**: Before any deletions on the source cluster, the script ensures tasks on the destination cluster are healthy.
+- **Resilience**: If any tasks face health issues, the script retries, ensuring maximum chances for a successful migration.
+
+## Final Thoughts
+
+While automation simplifies tasks, being informed and cautious is key. Always review script settings and configurations prior to execution to safeguard your AWS ECS infrastructure.
+
+Stay innovative and happy migrating!

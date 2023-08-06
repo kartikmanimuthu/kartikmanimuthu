@@ -1,0 +1,67 @@
+---
+title: MultiTenant Context Decoupling in Node.js Applications
+date: 2023/08/06
+description: Tackling the challenge of tenant context maintenance in multitenant architectures.
+tag: web development
+author: Kartik Manimuthu
+---
+
+import Image from "next/image";
+
+# MultiTenant Context Decoupling: A Node.js Solution
+
+Modern software design, especially within the realm of **SaaS applications**, frequently embraces multitenancy. This concept, though advantageous, introduces the complexity of managing each **tenant's context**. Particularly when asynchronous operations come into play, handling context can be a puzzle. This article unpacks a novel approach to this challenge, capitalizing on Express.js and Node.js's `async_hooks` module.
+
+## The Challenge
+
+Layered architecture designs, especially those crafted with Node.js, commonly need to integrate **tenantId** or corresponding identifiers across various layers. The main hurdle is the consistent management of the tenant context over asynchronous tasks, eliminating the need to tediously pass the context across every layer.
+
+## Introducing `async_hooks`: The Game Changer
+
+Node.js's `async_hooks` module offers an API to register callbacks, precisely tracing the lifespan of asynchronous resources. By harnessing the capabilities of this intrinsic module, developers can adeptly manage and preserve the tenant context throughout asynchronous tasks.
+
+## A Visual Dive into the Architecture
+
+For those who prefer a visual insight, the subsequent diagrams detail how the tenant context is preserved throughout an application's operations:
+
+<Image
+  src="/blog/multitenant-context-decouple/layered_arch.png"
+  alt="Illustration of Layered Architecture"
+  title="Layered Architecture"
+  width={1000}
+  height={1000}
+  priority
+  className="next-image"
+/>
+
+<Image
+  src="/blog/multitenant-context-decouple/dont's.png"
+  alt="Common Mistakes to Avoid"
+  title="Common Mistakes"
+  width={1000}
+  height={1000}
+  priority
+  className="next-image"
+/>
+
+<Image
+  src="/blog/multitenant-context-decouple/do's.png"
+  alt="Recommended Best Practices"
+  title="Best Practices"
+  width={1000}
+  height={1000}
+  priority
+  className="next-image"
+/>
+
+## Essential Technologies
+
+To replicate or understand this solution in-depth, acquainting yourself with the following technologies is crucial:
+
+- **Node.js**: A powerful open-source runtime environment facilitating server-side JavaScript code execution.
+- **Express.js**: A lean web application framework tailored for Node.js, renowned for its capabilities in crafting robust web and mobile applications.
+- **async_hooks**: This pivotal Node.js core module is designed to meticulously track the lifetime of asynchronous resources, promoting resource management that's context-aware.
+
+[Discover More in the Source Code ↗](https://github.com/kartikmanimuthu/multi-tenant-context-decouple)
+
+In wrapping up, this method presents a streamlined approach to navigate the intricacies of context management in multitenant Node.js solutions. As with all open-source endeavors, contributions, feedback, and insights are warmly welcomed. Stay on the lookout for more enrichments and updates to this paradigm!

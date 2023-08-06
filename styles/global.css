@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* @todo it's important to note that if you're using other h1 tags at the beginning of your markdown files, this will also hide those. If you want a more specific solution where you can control which titles are shown and hidden, you may need to customize the Nextra theme or use a different approach. */
+ h1:first-child {
+    display: none;
+}

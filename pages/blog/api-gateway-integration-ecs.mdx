@@ -1,0 +1,83 @@
+---
+title: "AWS API Gateway Integration with ECS (Fargate): A Comprehensive Analysis"
+date: "2023-08-07"
+description: "Dive deep into the relationship between AWS API Gateway and ECS on Fargate, understanding their key synergies"
+tag: ""
+author: "Kartik Manimuthu"
+---
+
+import Image from "next/image";
+
+## AWS API Gateway Integration with ECS (Fargate): A Comprehensive Analysis
+
+When venturing into AWS's extensive suite of services, it's imperative to grasp the integration dynamics between its various components. In this piece, let's dissect the intricate relationship between AWS API Gateway and ECS, focusing on their advantages, limitations, and bottlenecks.
+
+## Case Study 1: API Gateway v1 (Rest) with ECS via Private Link & NLB
+
+<Image
+  src="/blog/api-gateway-integration-ecs/case_study_1.png"
+  alt="API Gateway v1 with NLB"
+  width={1000}
+  height={1000}
+/>
+
+### 🌟 Strengths:
+
+- Perfect for microservice-based setups.
+- Efficiently offloads authentication to Lambda, managing it at the gateway layer.
+- Global CORS handling.
+- Unified approach to Rate Limiting for DDoS protection.
+
+### ⚠️ Limitations:
+
+- Extra network hop through the load balancer.
+- Restrictive timeout of 30 seconds.
+- Soft limit set at 10,000 requests for throttling.
+- Maximum allowable request payload is 10MB.
+
+---
+
+## Case Study 2: API Gateway v2 (HTTP API) with ECS via Private Link & ALB
+
+<Image
+  src="/blog/api-gateway-integration-ecs/case_study_2.png"
+  alt="API Gateway v2 with ALB"
+  width={1000}
+  height={1000}
+/>
+
+### 🌟 Strengths:
+
+- Bypasses unnecessary network hops with direct integration to the ALB.
+- Granular DDoS mitigation with route-specific Rate Limiting.
+- Positions as a streamlined and cost-effective version of the API Gateway v1.
+
+### ⚠️ Limitations:
+
+- Lacks WAF support.
+- No provision for API Key-based management.
+
+### 🔍 Potential Hiccups:
+
+- Risk of timeouts for endpoints with latencies above 30 seconds.
+- Challenging scenarios with API payloads surpassing 10MB.
+
+### 🛠 Ways to Overcome:
+
+- Endeavor to keep endpoint responses within optimal SLAs, ideally under 5 seconds.
+- Pivoting from synchronous to asynchronous API calls.
+- Redirect file uploads to utilize presigned S3 bucket links.
+
+---
+
+## In Retrospect
+
+Understanding AWS's intricate mesh of services is paramount for any robust system design. It's equally vital to keep abreast with the evolving technological landscape. For anyone contemplating an AWS migration or refining their current ecosystem, this dissection of API Gateway and ECS offers invaluable insights.
+
+---
+
+## Further Reading & Resources:
+
+- [Official AWS API Gateway Limits](https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.html)
+- [Distinguishing AWS API Gateway: HTTP API vs REST](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-vs-rest.html)
+- [Getting Started with AWS Web Application Firewall (WAF)](https://aws.amazon.com/waf/)

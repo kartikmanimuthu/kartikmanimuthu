@@ -8,9 +8,14 @@ export const personalization: { [key: string]: string } =
 
 export const workExperience: ReadonlyArray<{ organization: string, role: string, duration: string }> = [
     {
+        organization: "SMC Group",
+        role: "Director of Engineering",
+        duration: "09/2023 - Present",
+    },
+    {
         organization: "Scrut Automation",
         role: "Engineering Manager",
-        duration: "01/2023 - Present",
+        duration: "01/2023 - 09/2023",
     },
     {
         organization: "BYJU'S (Think & Learn Group)",

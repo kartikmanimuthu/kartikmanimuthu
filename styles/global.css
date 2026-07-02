@@ -185,6 +185,117 @@
   color: #9fdbc4;
 }
 
+/* home */
+.site-shell .hero {
+  padding: 72px 0 0;
+}
+.site-shell .hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 40px;
+  align-items: start;
+}
+.site-shell .hero h1 {
+  font-size: 34px;
+  line-height: 1.3;
+}
+.site-shell .hero .role {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 12.5px;
+  color: var(--cloud);
+  margin: 16px 0 0;
+}
+.site-shell .hero p.lede {
+  margin: 18px 0 0;
+  font-size: 16px;
+  color: #c2c8d4;
+  max-width: 62ch;
+}
+.site-shell .hero p.lede + p.lede {
+  margin-top: 12px;
+  color: var(--muted);
+}
+.site-shell .hero-photo {
+  width: 140px;
+  height: 140px;
+  border: 1px solid var(--hairline);
+  padding: 6px;
+  background: var(--panel);
+}
+.site-shell .hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.site-shell .hero-cta {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.site-shell .btn {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border: 1px solid var(--hairline);
+  text-decoration: none;
+  color: var(--text);
+  display: inline-block;
+}
+.site-shell .btn.primary {
+  background: var(--text);
+  color: var(--ink);
+  border-color: var(--text);
+}
+
+.site-shell .teaser-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+  margin-bottom: 56px;
+}
+.site-shell .teaser {
+  background: var(--panel);
+  padding: 20px 20px 22px;
+}
+.site-shell .teaser .k {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.site-shell .teaser--cloud .k {
+  color: var(--cloud);
+}
+.site-shell .teaser--ai .k {
+  color: var(--ai);
+}
+.site-shell .teaser--data .k {
+  color: var(--data);
+}
+.site-shell .teaser h4 {
+  font-size: 15.5px;
+  font-weight: 600;
+  font-family: var(--font-public-sans);
+  margin: 0 0 8px;
+}
+.site-shell .teaser p {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.site-shell .teaser a {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  color: var(--text);
+  text-decoration: none;
+}
+
 @media (max-width: 720px) {
   .site-shell .stats {
     grid-template-columns: repeat(2, 1fr);
@@ -195,5 +306,16 @@
   .site-shell .site-footer {
     flex-direction: column;
     gap: 14px;
+  }
+  .site-shell .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .site-shell .hero-photo {
+    width: 84px;
+    height: 84px;
+    order: -1;
+  }
+  .site-shell .teaser-row {
+    grid-template-columns: 1fr;
   }
 }

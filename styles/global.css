@@ -296,6 +296,102 @@
   text-decoration: none;
 }
 
+/* expertise */
+.site-shell .page-title {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.site-shell .page-sub {
+  color: var(--muted);
+  font-size: 14.5px;
+  max-width: 60ch;
+  margin: 0 0 40px;
+}
+
+.site-shell .pillar-full {
+  border-top: 1px solid var(--hairline);
+  padding: 40px 0 44px;
+  scroll-margin-top: 80px;
+}
+.site-shell .pillar-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+.site-shell .pillar-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.site-shell .pillar-full h3 {
+  font-size: 24px;
+}
+.site-shell .pillar--cloud .pillar-icon,
+.site-shell .pillar--cloud .group-k {
+  color: var(--cloud);
+}
+.site-shell .pillar--ai .pillar-icon,
+.site-shell .pillar--ai .group-k {
+  color: var(--ai);
+}
+.site-shell .pillar--data .pillar-icon,
+.site-shell .pillar--data .group-k {
+  color: var(--data);
+}
+
+.site-shell .group-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 36px;
+  margin-bottom: 24px;
+}
+.site-shell .group-k {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hairline-soft);
+}
+.site-shell .group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.site-shell .group li {
+  font-size: 13.5px;
+  color: #c7ccd9;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+.site-shell .group li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 1px;
+  background: var(--muted-dim);
+}
+.site-shell .group li b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-shell .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hairline-soft);
+}
+
 @media (max-width: 720px) {
   .site-shell .stats {
     grid-template-columns: repeat(2, 1fr);
@@ -316,6 +412,9 @@
     order: -1;
   }
   .site-shell .teaser-row {
+    grid-template-columns: 1fr;
+  }
+  .site-shell .group-grid {
     grid-template-columns: 1fr;
   }
 }

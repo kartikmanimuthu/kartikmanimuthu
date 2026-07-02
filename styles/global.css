@@ -35,6 +35,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.site-shell h1:first-child {
+  display: block;
+}
+
 .site-shell h1,
 .site-shell h2,
 .site-shell h3 {

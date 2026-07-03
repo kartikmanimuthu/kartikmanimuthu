@@ -27,6 +27,7 @@
   --data: #52c2a0;
   --data-dim: #1e4f42;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --nav-bg: rgba(10, 14, 22, 0.9);
 
   background: var(--ink);
   color: var(--text);
@@ -54,6 +55,7 @@
   --data: #0f7a5c;
   --data-dim: #a3ddc7;
   --shadow: 0 1px 3px rgba(16, 21, 31, 0.08), 0 1px 2px rgba(16, 21, 31, 0.06);
+  --nav-bg: rgba(242, 243, 246, 0.85);
 }
 
 .site-shell h1:first-child {
@@ -108,7 +110,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(10, 14, 22, 0.9);
+  background: var(--nav-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--hairline-soft);
 }

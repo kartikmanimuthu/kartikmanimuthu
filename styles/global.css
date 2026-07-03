@@ -35,6 +35,23 @@
   -webkit-font-smoothing: antialiased;
 }
 
+:root[data-theme="light"] .site-shell {
+  --ink: #f7f8fa;
+  --panel: #ffffff;
+  --panel-2: #eef0f4;
+  --hairline: #d8dce3;
+  --hairline-soft: #e4e7ec;
+  --text: #10151f;
+  --muted: #5b6472;
+  --muted-dim: #8993a8;
+  --cloud: #2f6fb8;
+  --cloud-dim: #b8d4f0;
+  --ai: #7c5fd1;
+  --ai-dim: #ddd3f7;
+  --data: #1f8f70;
+  --data-dim: #bfe9db;
+}
+
 .site-shell h1:first-child {
   display: block;
 }
@@ -556,4 +573,22 @@
   font-family: var(--font-jetbrains-mono), monospace;
   font-size: 11.5px;
   white-space: nowrap;
+}
+
+.site-shell .theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+}
+.site-shell .theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--cloud-dim);
 }

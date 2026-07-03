@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -18,16 +19,19 @@ const Nav: React.FC = () => {
     <nav className="site-nav">
       <div className="site-nav-inner">
         <span className="site-nav-mark">Kartik Manimuthu</span>
-        <div className="site-nav-links">
-          {LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={router.pathname === link.href ? "active" : undefined}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div style={{ display: "flex", alignItems: "center", gap: "26px" }}>
+          <div className="site-nav-links">
+            {LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={router.pathname === link.href ? "active" : undefined}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </div>
     </nav>

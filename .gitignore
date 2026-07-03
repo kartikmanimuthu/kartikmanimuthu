@@ -9,6 +9,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# This project uses pnpm (pnpm-lock.yaml) exclusively
+package-lock.json
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
 # Environment configuration
 .env.local
 .env.*.local

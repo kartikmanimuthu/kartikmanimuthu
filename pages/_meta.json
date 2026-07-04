@@ -1,12 +1,5 @@
 {
-    "index": "Home",
-    "about": "About",
-    "experience": "Experience",
-    "uses": "Uses",
-    "blog": {
-        "display": "hidden"
-    },
-    "projects": {
-        "display": "hidden"
-    }
+  "blog": {
+    "display": "hidden"
+  }
 }

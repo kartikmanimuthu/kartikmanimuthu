@@ -1,3 +1,3 @@
 export const personalization: { [key: string]: string } = {
-  profilePicPublicPath: "/Profile.png",
+  profilePicPublicPath: "/Profile.jpeg",
 };

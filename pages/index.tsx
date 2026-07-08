@@ -37,11 +37,8 @@ export default function Home() {
                 &quot;probably correct&quot; isn&apos;t good enough.
               </p>
               <div className="hero-cta">
-                <a className="btn primary" href="/resume.pdf">
-                  Download Résumé
-                </a>
                 <a
-                  className="btn"
+                  className="btn primary"
                   href="https://www.linkedin.com/in/kartik-manimuthu"
                   target="_blank"
                   rel="noreferrer"

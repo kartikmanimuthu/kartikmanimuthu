@@ -4,9 +4,7 @@ const THEME_INIT_SCRIPT = `
 (function () {
   try {
     var stored = window.localStorage.getItem("theme");
-    var theme = stored === "light" || stored === "dark"
-      ? stored
-      : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    var theme = stored === "light" || stored === "dark" ? stored : "light";
     document.documentElement.setAttribute("data-theme", theme);
   } catch (e) {}
 })();

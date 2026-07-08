@@ -14,13 +14,11 @@ function applyTheme(theme: Theme) {
 }
 
 const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     const stored = getStoredTheme();
-    const initial: Theme =
-      stored ?? (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
-    setTheme(initial);
+    setTheme(stored ?? "light");
   }, []);
 
   const toggle = () => {
